@@ -33,7 +33,7 @@ try:
                 for entity in feed.entity:
                     if entity.HasField('vehicle'):
                         v = entity.vehicle
-                        bus_number = v.vehicle.label if v.vehicle.label else "情報なし"
+                        bus_number = v.vehicle.id if v.vehicle.id else "情報なし"
                         lat = v.position.latitude
                         lon = v.position.longitude
                         speed = round(v.position.speed * 3.6, 1) # km/hに変換
