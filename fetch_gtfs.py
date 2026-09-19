@@ -5,7 +5,7 @@ from datetime import datetime, timezone, timedelta
 import os
 
 # ⚠️ 注意：ここに本物のURL（http〜.pb）を必ず入れてください！ ⚠️
-url = "URL（http〜.pb）"
+url = "URL（https://creativecommons.org/licenses/by/4.0/）"
 
 # エラー防止：ファイルが存在しない場合は、まず空のファイルを作成する
 if not os.path.exists('bus_history.csv'):
